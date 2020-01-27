@@ -31,10 +31,12 @@ public class BallController : MonoBehaviour
                 started = true;
             }
         }
-        Debug.DrawRay(transform.position, Vector3.down);
+        Debug.DrawRay(transform.position, Vector3.down, Color.blue);
         if(!Physics.Raycast(transform.position, Vector3.down, 1f))
         {
             gameOver = true;
+            Camera.main.GetComponent<CameraController>().gameOver = true;
+
             rb.velocity = new Vector3(0, -25f, 0);
         }
 
