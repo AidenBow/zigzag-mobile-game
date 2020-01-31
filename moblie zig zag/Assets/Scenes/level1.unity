@@ -939,7 +939,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12b70184193f54e46a44e85f93a405d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  particle: {fileID: 1941881198632785388, guid: b20172ac03c7e2443a137d38c86c4f82,
+    type: 3}
+  speed: 8
 --- !u!1 &2035724340
 GameObject:
   m_ObjectHideFlags: 0
